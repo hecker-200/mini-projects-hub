@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI CALCULATOR</title>
+  <link rel="stylesheet" href="./style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <h1>BMI CALCULATOR</h1>
+
+ <div class="container">
+
+  <div class="form-row">
+  <label for="height">Height (in cm)</label>
+  <input type="number" id="height" placeholder="Enter height">
+
+  <div class="form-row">
+  <label for="weight">Weight (in kg)</label>
+  <input type="number" id="weight" placeholder="Enter Weight">
+
+  <button id="btn">CALCULATE</button>
+
+  <p id="result"></p>
+    <h2>BMI WEIGHT GUIDE</h2>
+
+    <div class="info">
+    <p>Under Weight = Less than 18.6</p>
+    <p>Normal Range = 18.6 to 24.9</p>
+    <p>Overweight = Greater than 24.9</p>
+    </div>
+
+    <a href="../index.html" id="allah">Back to main page</a>
+
+</div>
+ </div>
+
+ <script>
+
+
+  const btn = document.querySelector('#btn');
+  const result = document.querySelector('#result');
+
+  btn.addEventListener('click' , (e) => {
+
+    e.preventDefault();
+    const h = document.querySelector('#height').value
+    const b = document.querySelector('#weight').value
+
+    if(h == '' || h < 0 || b < 0 || b == '' || isNaN(h) || isNaN(b)){
+      result.textContent = 'please enter a valid height and weight value'
+      return;
+    }
+
+    const bmi = b / ((h/100)**2);
+
+
+    if(bmi < 18.6){
+
+      result.textContent = `YOUR BMI IS ${bmi.toFixed(1)}
+      You are underweight`;
+
+    }
+
+    if(bmi >= 18.6 && bmi < 24.9){
+
+      result.textContent = `YOUR BMI IS ${bmi.toFixed(1)}
+      You are normal weight`;
+    }
+
+    if(bmi > 24.9){
+
+      result.textContent = `YOUR BMI IS ${bmi.toFixed(1)}
+      You are overweight`;
+    }
+    
+    
+  })
+document.querySelector('#weight').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    btn.click(); // ✅ trigger calculation
+  }
+});
+
+  
+
+
+  
+
+
+ </script>
+  
+</body>
+</html>

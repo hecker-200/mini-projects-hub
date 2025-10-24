@@ -1,0 +1,148 @@
+/* GLOBAL */
+body{
+  background: radial-gradient(circle at 50% 0%, #0E1311, #0A0F0D 70%);
+  color: #E6D28A;
+  font-family: 'Cinzel', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+/* TOP BAR */
+#box{
+  width: 100%;
+  padding: 1.2rem 0;
+  background: linear-gradient(145deg, #0B0B0D, #1A1C22);
+  box-shadow: 0 0 20px rgba(230,210,138,0.2);
+}
+
+#box h2 {
+  color: #E6D28A;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+/* SUBTEXT */
+#naya p{
+  margin-top: 2rem;
+  width: 100%;
+  font-size: 1.3rem;
+  color: #D7C68C;
+  line-height: 1.4;
+}
+
+/* MAIN HEADING */
+#main{
+  font-size: 5rem;
+  margin-top: 1rem;
+  font-weight: 800;
+  text-shadow: 0 0 18px rgba(230,210,138,0.5);
+  letter-spacing: 2px;
+}
+
+/* INPUT FIELD */
+#andar{
+  width: 420px;
+  height: 65px;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: 2px solid #C7A745;
+  background-color: #111;
+  color: #E6D28A;
+  text-align: center;
+  margin-top: 1rem;
+  box-shadow: 0 0 15px rgba(80,70,30,0.5);
+  outline: none;
+}
+
+#andar:focus{
+  box-shadow: 0 0 30px rgba(230,210,138,0.55);
+}
+
+/* PRIMARY ACTION BUTTON */
+#btnWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bandh {
+  margin: 50px 0;
+  height: 65px;
+  width: 250px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #0B0B0D, #1C1E22, #0A0A0C);
+  color: #F3E6A6;
+  font-size: 1.7rem;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border: 2px solid #C7A745;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 20px rgba(230,210,138,0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+#bandh:hover {
+  transform: translateY(-6px) scale(1.04);
+  box-shadow: 
+    0 0 45px rgba(231,217,148,0.75),
+    0 0 90px rgba(150,130,50,0.5);
+}
+
+#bandh:active {
+  transform: translateY(-2px) scale(0.97);
+}
+
+/* EXTRA BUTTON YOU MENTIONED — ROYAL SECONDARY */
+#btn{
+  width: 240px;
+  height: 70px;
+  margin: 20px auto;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #343434, #151515);
+  border: 2px solid #9C8442;
+  color: #EAD78B;
+  font-size: 1.4rem;
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0 0 12px rgba(156,132,66,0.4);
+  transition: 0.25s ease-in-out;
+}
+
+#btn:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 0 30px rgba(189,161,88,0.7);
+}
+
+#btn:active{
+  transform: scale(0.95);
+}
+
+/* ATTEMPTS DISPLAY */
+#gas {
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  color: #EBDDA1;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(240,220,150,0.4);
+}
+
+#prev{
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  color: #EBDDA1;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgba(240,220,150,0.4);
+}
+
+

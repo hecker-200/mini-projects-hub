@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div>
+      <h1 id="fadeText">ROYAL COLOR PALETTE</h1>
+    </div>
+
+    <div class="container">
+      <div class="box" id="one"></div>
+      <div class="box" id="two"></div>
+      <div class="box" id="three"></div>
+      <div class="box" id="four"></div>
+      <div class="box" id="five"></div>
+   
+    </div>
+
+    <p>
+    Touch a shade, and let the silence of royalty unfold.
+    </p>
+
+    <button id="btn">
+      <a href="../index.html" id="bl">BACK</a>
+    </button>
+
+    <script>
+      const boxes = document.querySelectorAll(".box");
+      const body = document.querySelector("body");
+
+      boxes.forEach((box) => {
+        box.addEventListener("click", (e) => {
+          const x = e.target;
+
+          if (x.id == "one") {
+            body.style.background = "linear-gradient(135deg, #0B0B0B 0%, #141212 40%, #312B25 100%)";
+          }
+
+          if (x.id == "two") {
+            body.style.background = "linear-gradient(145deg, #0A0A0A 0%, #2B0000 50%, #1B1B1B 100%)";
+          }
+
+          if (x.id == "three") {
+            body.style.background = "linear-gradient(145deg, #000518 0%, #0C0E17 35%, #1C1F2B 100%)";
+          }
+
+          if (x.id == "four") {
+            body.style.background = "linear-gradient(145deg, #0C0F0E 0%, #131A18 50%, #1D2A27 100%)";
+          }
+
+          if (x.id == "five") {
+            body.style.background = " linear-gradient(160deg, #000B1D 0%, #002B49 40%, #003C5E 100%)";
+          }
+
+        });
+      });
+    </script>
+  </body>
+</html>

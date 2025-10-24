@@ -1,0 +1,108 @@
+body {
+  background: linear-gradient(135deg, #1a1a1a 0%, #121212 100%);
+  color: #fff;
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Cinzel', sans-serif;
+  font-size: x-large;
+}
+
+.box {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  gap: 60px;
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid rgb(67, 67, 67);
+  transition: all 0.3s ease;
+}
+
+#one {
+ background: linear-gradient(135deg, #0B0B0B 0%, #141212 40%, #312B25 100%);
+
+}
+#two {
+  background: linear-gradient(145deg, #0A0A0A 0%, #2B0000 50%, #1B1B1B 100%);
+}
+#three {
+  background: linear-gradient(145deg, #000518 0%, #0C0E17 35%, #1C1F2B 100%);
+;
+}
+#four {
+  background: linear-gradient(145deg, #0C0F0E 0%, #131A18 50%, #1D2A27 100%);
+
+
+}
+#five {
+  background: linear-gradient(160deg, #000B1D 0%, #002B49 40%, #003C5E 100%);
+
+}
+
+
+
+
+.box:hover {
+  transform: translateY(-10px); /* lifts box upward */
+  box-shadow: 0 10px 15px rgba(255, 255, 255, 0.3); /* subtle glow */
+}
+
+p {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+/* ✨ Title Fade Animation */
+h1 {
+  animation: fadeInOut 3s ease-in-out infinite;
+  letter-spacing: 2px;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(10px); }
+  25% { opacity: 1; transform: translateY(0); }
+  75% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
+
+#btn {
+  background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+  color: #fff;
+  border: 2px solid rgb(67, 67, 67);
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  font-family: 'Cinzel', sans-serif;
+  margin-top: 30px;
+}
+
+/* 🧠 Hover Effect */
+#btn:hover {
+  background: linear-gradient(145deg, #3a3a3a, #222);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* 👇 Optional: subtle press animation */
+#btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+#bl{
+  text-decoration: none;
+  color: #fff;
+}
+
+#result{
+  font-size: 3rem
+}
